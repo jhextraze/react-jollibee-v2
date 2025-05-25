@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2025 at 07:19 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: May 25, 2025 at 06:44 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,10 +40,10 @@ CREATE TABLE `branches` (
 --
 
 INSERT INTO `branches` (`branch_aid`, `branch_is_active`, `branch_name`, `branch_datetime`, `branch_created`) VALUES
-(2, 1, 'Jollibee Rizal', '', 2025),
-(4, 0, 'Jollibee Mt. Everest', '', 2025),
-(5, 1, 'Jollibee BGC', '2025-05-20 13:17:32', 2025),
-(6, 1, 'Jollibee Makati', '2025-05-20 13:18:25', 2025);
+(2, 0, 'Jollibee Liliw', '', 2025),
+(5, 0, 'Jollibee Nagcarlan', '', 2025),
+(6, 1, 'Jollibee Araneta', '2025-05-22 11:14:25', 2025),
+(7, 0, 'Jollibee San Pablo', '', 2025);
 
 -- --------------------------------------------------------
 
@@ -66,8 +66,10 @@ CREATE TABLE `food_category` (
 
 INSERT INTO `food_category` (`food_category_aid`, `food_category_is_active`, `food_category_image`, `food_category_name`, `food_category_datetime`, `food_category_created`) VALUES
 (1, 1, '', 'Chickenjoy', '2025-05-13 19:24:00', 0),
-(2, 1, '', 'burger', '', 2025),
-(5, 0, '', 'Jolli Fries', '', 2025);
+(2, 1, '', 'Kamote', '2025-05-22 11:15:07', 2025),
+(5, 0, '', 'Jolli Fries', '', 2025),
+(6, 1, '', 'Coal Meal', '2025-05-22 11:15:20', 2025),
+(7, 1, '', 'borger steak', '2025-05-22 11:15:30', 2025);
 
 -- --------------------------------------------------------
 
@@ -143,13 +145,13 @@ ALTER TABLE `food_item`
 -- AUTO_INCREMENT for table `branches`
 --
 ALTER TABLE `branches`
-  MODIFY `branch_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `branch_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `food_category`
 --
 ALTER TABLE `food_category`
-  MODIFY `food_category_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `food_category_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `food_deals`
